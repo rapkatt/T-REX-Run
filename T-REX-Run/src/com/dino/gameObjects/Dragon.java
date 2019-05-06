@@ -12,7 +12,7 @@ import javafx.scene.shape.Polygon;
  *
  * @author Dimitrije Muzur
  */
-public class Dragon extends GameObject{
+public class Dragon extends com.dino.gameObjects.GameObject {
     private static final int SPRITE_WIDTH   = 88;
     private static final int SPRITE_HEIGHT  =  94;
     private static final double GRAVITY     = 5000;
@@ -38,7 +38,7 @@ public class Dragon extends GameObject{
         sprite = new Image(getClass().getResourceAsStream("/res/trex.png"));
         
         maps = new HashMap<>();
-        maps.put(states.running, new int[] {2,3});
+        maps.put(states.running, new int[] {2,3});//how often legs move
         maps.put(states.standing, new int[] {0});
         maps.put(states.dead, new int[]{4});
         
@@ -47,7 +47,7 @@ public class Dragon extends GameObject{
         elapsedTimeRunning = 0.0;
     }
 
-    @Override
+//    @Override
     public void update(double delta) {
         elapsedTimeRunning+=delta;
         
@@ -87,7 +87,7 @@ public class Dragon extends GameObject{
             y = Engine.GAME_HEIGHT-h;
     }
 
-    @Override
+//    @Override
     public void render(GraphicsContext g) {
         if(elapsedTimeRunning >= 0.1){
             if(spriteIndex++ >= maps.get(currentState).length-1){
