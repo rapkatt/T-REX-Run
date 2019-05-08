@@ -8,7 +8,7 @@ import javafx.scene.shape.Polygon;
  *
  * @author Dimitrije Muzur
  */
-public abstract class GameObject implements GameObjectInterface{
+public abstract class GameObject implements com.dino.gameObjects.GameObjectInterface {
     protected double x;
     protected double y;
     protected double w;
