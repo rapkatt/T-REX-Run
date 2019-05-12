@@ -25,7 +25,7 @@ public class Main extends Application{
         primaryStage.setScene(scene);
 
         engine.init();
-        engine.start();
+        //engine.start();
         
         primaryStage.setOnCloseRequest((event) -> {
             engine.stop();

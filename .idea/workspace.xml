@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0daa1d8-61f4-4934-9a71-e8e63fa81c75" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T-REX-Run/src/com/dino/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/T-REX-Run/src/com/dino/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,69 +25,25 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-              <folding>
-                <element signature="e#279#280#0" expanded="true" />
-                <element signature="e#307#308#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="270">
+              <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+            <state>
+              <caret lean-forward="true" />
               <folding>
                 <element signature="e#613#614#0" expanded="true" />
                 <element signature="e#645#646#0" expanded="true" />
                 <element signature="e#684#685#0" expanded="true" />
-                <element signature="e#708#709#0" expanded="true" />
-                <element signature="e#3476#3477#0" expanded="true" />
-                <element signature="e#4060#4061#0" expanded="true" />
-                <element signature="e#4088#4089#0" expanded="true" />
+                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#3273#3274#0" expanded="true" />
+                <element signature="e#3300#3301#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/ScoreT.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1578">
-              <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#6649#6650#0" expanded="true" />
-                <element signature="e#6693#6694#0" expanded="true" />
-                <element signature="e#6728#6729#0" expanded="true" />
-                <element signature="e#6756#6757#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/GenerateCloundsTask.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/GameObjectInterface.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -96,20 +57,27 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/CactusBuilder.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+            <state relative-caret-position="191">
+              <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#7777#7778#0" expanded="true" />
+                <element signature="e#7821#7822#0" expanded="true" />
+                <element signature="e#7856#7857#0" expanded="true" />
+                <element signature="e#7884#7885#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Cactus.java">
+        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/GameObjectInterface.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="105">
+              <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -145,9 +113,9 @@
         <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/GameObjectInterface.java" />
         <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/ScoreT.java" />
         <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Cactus.java" />
+        <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" />
         <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/Main.java" />
         <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java" />
-        <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" />
       </list>
     </option>
   </component>
@@ -213,11 +181,6 @@
               <item name="T-REX-Run" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
-            <path>
-              <item name="T-REX-Run" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -282,15 +245,15 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24940239" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24940239" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32884902" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.32884902" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31390134" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31390134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39910313" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -333,24 +296,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout-to-restore>
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java</url>
-          <line>70</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java</url>
-          <line>93</line>
-          <properties />
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Menu.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -379,13 +324,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/GameObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///usr/lib/jvm/java-8-oracle/javafx-src.zip!/javafx/beans/property/ListProperty.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -404,24 +342,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="22" column="29" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-          <folding>
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#307#308#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/GameObjectInterface.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/GenerateCloundsTask.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -432,32 +352,76 @@
     <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/ScoreT.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java">
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/res/cloud.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/res/2x-text.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/res/horizon.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/res/obstacle-small.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/res/trex.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/res/gameOver.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/res/restart.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1578">
-          <caret line="91" column="17" selection-start-line="91" selection-start-column="17" selection-end-line="91" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#6649#6650#0" expanded="true" />
-            <element signature="e#6693#6694#0" expanded="true" />
-            <element signature="e#6728#6729#0" expanded="true" />
-            <element signature="e#6756#6757#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="26" column="19" selection-start-line="26" selection-start-column="19" selection-end-line="26" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/GameObjectInterface.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/GameObject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="57" column="35" selection-start-line="57" selection-start-column="35" selection-end-line="57" selection-end-column="35" />
+        <state>
+          <caret lean-forward="true" />
           <folding>
             <element signature="e#613#614#0" expanded="true" />
             <element signature="e#645#646#0" expanded="true" />
             <element signature="e#684#685#0" expanded="true" />
-            <element signature="e#708#709#0" expanded="true" />
-            <element signature="e#3476#3477#0" expanded="true" />
-            <element signature="e#4060#4061#0" expanded="true" />
-            <element signature="e#4088#4089#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#3273#3274#0" expanded="true" />
+            <element signature="e#3300#3301#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/res/obstacle-large.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="74" column="48" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#7777#7778#0" expanded="true" />
+            <element signature="e#7821#7822#0" expanded="true" />
+            <element signature="e#7856#7857#0" expanded="true" />
+            <element signature="e#7884#7885#0" expanded="true" />
           </folding>
         </state>
       </provider>

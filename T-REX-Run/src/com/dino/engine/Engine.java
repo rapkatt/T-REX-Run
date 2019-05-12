@@ -40,6 +40,8 @@ public class Engine extends StackPane {
     private final Canvas canvas;
     private final GraphicsContext g;
     private final ImageView btnRestart;
+    private final ImageView btnStart;
+    private final ImageView btnExit;
 
     private Set<KeyCode> keyPool = null;
     private final AnimationTimer timer;
@@ -52,7 +54,7 @@ public class Engine extends StackPane {
 
     private long prevTime;
 
-    public Engine(){
+    public Engine() {
         canvas = new Canvas(GAME_WIDTH, GAME_HEIGHT);
 
         canvas.setOnKeyPressed((KeyEvent event) -> {
@@ -66,13 +68,31 @@ public class Engine extends StackPane {
         g = this.canvas.getGraphicsContext2D();
 
         btnRestart = new ImageView(new Image(getClass().getResourceAsStream("/res/gameOver.png"))); //game over code
+
+        btnStart = new ImageView(new Image(getClass().getResourceAsStream("/res/restart.png"))); //start button
+        setAlignment(btnStart, Pos.CENTER);
+        btnExit = new ImageView(new Image(getClass().getResourceAsStream("/res/cloud.png"))); // exit button
+        setAlignment(btnExit, Pos.CENTER);
+
+        setMargin(btnExit,new Insets(150,0,0,0));
         btnRestart.setVisible(false);
+        btnStart.setOnMouseClicked(e -> {
+            start();
+            btnStart.setVisible(false);
+        });
+        btnExit.setOnMouseClicked(e -> {
+            System.exit(0);
+            btnExit.setVisible(false);
+        });
+
         canvas.setOnMouseClicked((event) -> {
-            reinitHighScore();
-            this.init();
-            this.start();
-            //player.score();
-            btnRestart.setVisible(false);
+            if (btnRestart.isVisible()) {
+                reinitHighScore();
+                this.init();
+                this.start();
+                //player.score();
+                btnRestart.setVisible(false);
+            }
         });
         keyPool = new HashSet<>();
 
@@ -82,12 +102,13 @@ public class Engine extends StackPane {
                 mainloop((now - prevTime) / 1000000000.0); // animation speed
                 prevTime = now;
                 currentCounter.setText(String.valueOf(player.getScore()));
-                if(player.getScore() > player.getHighScore())
+                if (player.getScore() > player.getHighScore())
                     player.setHighScore(player.getScore());
 
             }
         };
     }
+
 
     private void reinitHighScore() {
         changeHighScoreVisibleState(true);
@@ -101,24 +122,29 @@ public class Engine extends StackPane {
             this.getChildren().addAll(currentScore,currentCounter,highCounter,highScore);
 
         }
-        
+
         if(!this.getChildren().contains(btnRestart)){                    
             this.getChildren().add(btnRestart);
         }
 
+        if(!this.getChildren().contains(btnStart)){
+            this.getChildren().add(btnStart);
+        }
+        if(!this.getChildren().contains(btnExit)){
+            this.getChildren().add(btnExit);
+        }
         canvas.requestFocus();
         elapsedTime = 0;
         if(player != null)
             player = new Dragon(this,player.getHighScore());
         else
             player = new Dragon(this);
-        initScoreBoard();
         generateClouds = new GenerateCloundsTask(this);
         generateObstacles = new GenerateObstaclesTask(this);
-        
+
         BackgroundObjects = new SimpleListProperty<>();
         ForegroundObjects = new SimpleListProperty<>();
-        
+
         BackgroundObjects.bindBidirectional(generateClouds.getPartialResultProperty());
         ForegroundObjects.bindBidirectional(generateObstacles.getPartialResultProperty());
     }
@@ -175,7 +201,6 @@ public class Engine extends StackPane {
         }
 //    }
     private void collisionDetection() { // dont know
-//        if (State == STATE.GAME) {
             for (GameObject obj : ForegroundObjects) {
                 Shape colisionShape = Shape.intersect(player.getPolygon(), obj.getPolygon());
                 if (colisionShape.getBoundsInLocal().getWidth() != -1) {
@@ -190,7 +215,8 @@ public class Engine extends StackPane {
     public void start(){
         speed = INITIAL_SPEED;
         prevTime = System.nanoTime();
-        
+        initScoreBoard();
+
         BackgroundObjects.add(new Horizon(this));
         Thread backgroundGenCloudsTread = new Thread(generateClouds); //start to generate clouds
         backgroundGenCloudsTread.setDaemon(true);
