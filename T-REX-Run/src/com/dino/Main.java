@@ -2,13 +2,13 @@ package com.dino;
 
 import com.dino.engine.Engine;
 import javafx.application.Application;
+import javafx.geometry.HPos;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
+import javafx.scene.layout.GridPane;
 import javafx.stage.Stage;
 
-/**
- *
- * @author Dimitrije Muzur
- */
+
 public class Main extends Application{
     public static final String TITLE = "Dino Run";
 
@@ -20,11 +20,10 @@ public class Main extends Application{
     public void start(Stage primaryStage) throws Exception {
         primaryStage.setResizable(false);
         primaryStage.setTitle(TITLE);
-
         Engine engine = new Engine();
         Scene scene = new Scene(engine);
         primaryStage.setScene(scene);
-        
+
         engine.init();
         engine.start();
         

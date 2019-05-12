@@ -4,10 +4,6 @@ package com.dino.gameObjects;
 import com.dino.engine.Engine;
 import com.dino.gameObjects.Cactus;
 
-/**
- *
- * @author Dimitrije Muzur
- */
 public class CactusBuilder {
     public static enum Cactussize{ LARGE, SMALL}
     

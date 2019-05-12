@@ -23,8 +23,8 @@ public class Cloud extends com.dino.gameObjects.GameObject {
     }
 
     @Override
-    public void update(double delta) {
-        x-=speed;
+    public void update(double delta) { // clouds speed
+        x-=speed * delta;
     }
 
     @Override

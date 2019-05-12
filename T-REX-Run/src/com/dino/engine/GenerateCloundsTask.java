@@ -21,17 +21,18 @@ public class GenerateCloundsTask extends Task<ObservableList<GameObject>> {
     Engine engine;
     
     private final ListProperty<GameObject> partialResult = new SimpleListProperty<>(FXCollections.observableArrayList(new ArrayList<>()));
-    public Property<ObservableList<GameObject>> getPartialResultProperty(){ return partialResult;}
+    public Property<ObservableList<GameObject>> getPartialResultProperty(){ return partialResult;} //???
 
-    public GenerateCloundsTask(Engine engine){
+    public GenerateCloundsTask(Engine engine) {
         this.engine = engine;
+
     }
     
     @Override
     protected ObservableList<GameObject> call() throws Exception {
         Random rand = new Random();
         
-        for(int i = 0; i < 5; i++){
+        for(int i = 0; i < 5; i++){  //how many will generate
             Cloud seedCloud = new Cloud(engine);
             seedCloud.setX(rand.nextDouble() * Engine.GAME_WIDTH);
             
@@ -42,7 +43,7 @@ public class GenerateCloundsTask extends Task<ObservableList<GameObject>> {
         while(true){
             if(isCancelled()) break;
             try{
-                Thread.sleep((long) (2000 + rand.nextDouble()*1000));
+                Thread.sleep((long) (2000 + rand.nextDouble()*100)); // distance between
             }catch (InterruptedException exc){
                 if(isCancelled()){
                     break;

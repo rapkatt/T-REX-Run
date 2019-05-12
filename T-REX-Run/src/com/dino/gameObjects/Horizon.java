@@ -4,10 +4,6 @@ import com.dino.engine.Engine;
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
-/**
- *
- * @author Dimitrije Muzur
- */
 public class Horizon extends GameObject{
     Image image;
 
