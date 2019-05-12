@@ -51,11 +51,6 @@ public class Engine extends StackPane {
     ;
 
     private long prevTime;
-//    public enum STATE{
-//        MENU,
-//        GAME
-//    };
-//    public STATE State = STATE.MENU;
 
     public Engine(){
         canvas = new Canvas(GAME_WIDTH, GAME_HEIGHT);

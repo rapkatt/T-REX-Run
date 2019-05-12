@@ -54,18 +54,8 @@ public class Dragon extends com.dino.gameObjects.GameObject {
         elapsedTimeRunning = 0.0;
     }
     public Dragon(Engine engine,int highScore){
-        super(engine, 0, Engine.GAME_HEIGHT-SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
-
-        sprite = new Image(getClass().getResourceAsStream("/res/trex.png"));
-
-        maps = new HashMap<>();
-        maps.put(states.running, new int[] {2,3});//how often legs move
-        maps.put(states.standing, new int[] {0});
-        maps.put(states.dead, new int[]{4});
+        this(engine);
         this.highScore = highScore;
-        spriteIndex=0;
-        currentState = states.running;
-        elapsedTimeRunning = 0.0;
     }
 
 
@@ -101,14 +91,7 @@ public class Dragon extends com.dino.gameObjects.GameObject {
         
         checkEdges();
     }
-    public void score(){
-        if(score > highScore) {
-            highScore= Math.round(score);
-        }
-        else {
-            score=Math.round(score);
-        }
-    }
+
     private void checkEdges(){
         if(x<0)
             x = 0;
