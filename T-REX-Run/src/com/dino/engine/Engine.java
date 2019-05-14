@@ -71,7 +71,7 @@ public class  Engine extends StackPane {
 
         btnStart = new ImageView(new Image(getClass().getResourceAsStream("/res/start.png"))); //start button
         setAlignment(btnStart, Pos.CENTER);
-        btnExit = new ImageView(new Image(getClass().getResourceAsStream("/res/cloud.png"))); // exit button
+        btnExit = new ImageView(new Image(getClass().getResourceAsStream("/res/exit.png"))); // exit button
         setAlignment(btnExit, Pos.CENTER);
 
         setMargin(btnExit,new Insets(150,0,0,0));
@@ -82,7 +82,7 @@ public class  Engine extends StackPane {
         });
         btnExit.setOnMouseClicked(e -> {
             System.exit(0);
-            btnExit.setVisible(false);
+            btnExit.setVisible(true);
         });
 
         canvas.setOnMouseClicked((event) -> {
