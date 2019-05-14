@@ -1,5 +1,6 @@
 package com.dino.gameObjects;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 import com.dino.engine.Engine;
@@ -7,6 +8,11 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.shape.Polygon;
+
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 public class Dragon extends com.dino.gameObjects.GameObject {
     private static final int SPRITE_WIDTH   = 88;
@@ -38,6 +44,8 @@ public class Dragon extends com.dino.gameObjects.GameObject {
     int spriteIndex;
     
     double elapsedTimeRunning;
+    private static String audioPath = "";
+
 
     public Dragon(Engine engine){
         super(engine, 0, Engine.GAME_HEIGHT-SPRITE_HEIGHT, SPRITE_WIDTH, SPRITE_HEIGHT);
@@ -85,11 +93,28 @@ public class Dragon extends com.dino.gameObjects.GameObject {
             y-=move;
             if(y > Engine.GAME_HEIGHT-h){
                 jumpvector = 0;
+                playSound("jump");
             }
         }
 
         
         checkEdges();
+    }
+    private void playSound (String sound) {
+        try {
+            Clip clip = AudioSystem.getClip();
+            clip.open(AudioSystem.getAudioInputStream(this.getClass().getResource(audioPath + sound + ".wav")));
+            clip.start();
+        } catch (LineUnavailableException e) {
+            System.out.println("Неверный путь к файлу " + sound);
+            System.exit(1);
+        } catch (UnsupportedAudioFileException e) {
+            System.out.println("Формат файла " + sound + " не поддерживается");
+            System.exit(2);
+        } catch (IOException e) {
+            System.out.println("Ошибка воспроизведения файла " + sound);
+            System.exit(3);
+        }
     }
 
     private void checkEdges(){

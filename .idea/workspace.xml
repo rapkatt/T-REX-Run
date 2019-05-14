@@ -4,6 +4,11 @@
     <list default="true" id="0e803ece-c0fd-4745-a745-79119d48658a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon$states.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon$states.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -16,36 +21,37 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="217">
-              <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1432">
-              <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+            <state relative-caret-position="330">
+              <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="310">
+              <caret line="95" column="87" selection-start-line="95" selection-start-column="87" selection-end-line="95" selection-end-column="87" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#4223#4224#0" expanded="true" />
+                <element signature="e#4250#4251#0" expanded="true" />
+                <element signature="e#4886#4887#0" expanded="true" />
+                <element signature="e#4914#4915#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
-              <folding>
-                <element signature="e#7922#7923#0" expanded="true" />
-                <element signature="e#7966#7967#0" expanded="true" />
-                <element signature="e#8001#8002#0" expanded="true" />
-                <element signature="e#8029#8030#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="57">
+              <caret line="210" lean-forward="true" selection-start-line="210" selection-end-line="210" />
             </state>
           </provider>
         </entry>
@@ -59,20 +65,22 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java" />
+        <option value="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1924" />
-    <option name="height" value="1056" />
+    <option name="x" value="672" />
+    <option name="y" value="24" />
+    <option name="width" value="694" />
+    <option name="height" value="700" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -89,14 +97,26 @@
               <item name="T-REX-Run" type="b2602c69:ProjectViewProjectNode" />
               <item name="T-REX-Run" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="audio" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="T-REX-Run" type="b2602c69:ProjectViewProjectNode" />
+              <item name="T-REX-Run" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dino" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="T-REX-Run" type="b2602c69:ProjectViewProjectNode" />
+              <item name="T-REX-Run" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dino" type="462c0819:PsiDirectoryNode" />
+              <item name="engine" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -151,32 +171,32 @@
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24940239" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1808765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32884902" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" weight="0.32884902" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32884902" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32884902" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.35690236" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.29147983" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
@@ -196,27 +216,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="30" column="23" lean-forward="true" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1432">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        <state relative-caret-position="330">
+          <caret line="30" column="23" selection-start-line="30" selection-start-column="23" selection-end-line="30" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="26" column="50" lean-forward="true" selection-start-line="26" selection-start-column="50" selection-end-line="26" selection-end-column="50" />
+        <state relative-caret-position="57">
+          <caret line="210" lean-forward="true" selection-start-line="210" selection-end-line="210" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="310">
+          <caret line="95" column="87" selection-start-line="95" selection-start-column="87" selection-end-line="95" selection-end-column="87" />
           <folding>
-            <element signature="e#7922#7923#0" expanded="true" />
-            <element signature="e#7966#7967#0" expanded="true" />
-            <element signature="e#8001#8002#0" expanded="true" />
-            <element signature="e#8029#8030#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4223#4224#0" expanded="true" />
+            <element signature="e#4250#4251#0" expanded="true" />
+            <element signature="e#4886#4887#0" expanded="true" />
+            <element signature="e#4914#4915#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -4,6 +4,7 @@ import com.dino.gameObjects.Dragon;
 import com.dino.gameObjects.GameObject;
 import com.dino.gameObjects.Horizon;
 
+import java.io.IOException;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -21,6 +22,11 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Shape;
+
+import javax.sound.sampled.AudioSystem;
+import javax.sound.sampled.Clip;
+import javax.sound.sampled.LineUnavailableException;
+import javax.sound.sampled.UnsupportedAudioFileException;
 
 
 public class  Engine extends StackPane {
@@ -201,12 +207,14 @@ public class  Engine extends StackPane {
 
             collisionDetection();
         }
-//    }
+
+
     private void collisionDetection() { // dont know
             for (GameObject obj : ForegroundObjects) {
                 Shape colisionShape = Shape.intersect(player.getPolygon(), obj.getPolygon());
                 if (colisionShape.getBoundsInLocal().getWidth() != -1) {
                     player.setState(Dragon.states.dead);
+
                     player.render(g);
                     stop();
                     btnRestart.setVisible(true);
