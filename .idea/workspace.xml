@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0e803ece-c0fd-4745-a745-79119d48658a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java" beforeDir="false" afterPath="$PROJECT_DIR$/T-REX-Run/src/com/dino/engine/Engine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" beforeDir="false" afterPath="$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/engine/Engine.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon$states.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon$states.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/T-REX-Run/com/dino/gameObjects/Dragon.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +28,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+            <state relative-caret-position="135">
+              <caret line="100" column="83" lean-forward="true" selection-start-line="100" selection-start-column="83" selection-end-line="100" selection-end-column="83" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#4223#4224#0" expanded="true" />
@@ -169,6 +163,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="-4" width="1301" height="772" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1808765" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -229,8 +224,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/T-REX-Run/src/com/dino/gameObjects/Dragon.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="103" column="13" lean-forward="true" selection-start-line="103" selection-start-column="13" selection-end-line="103" selection-end-column="13" />
+        <state relative-caret-position="135">
+          <caret line="100" column="83" lean-forward="true" selection-start-line="100" selection-start-column="83" selection-end-line="100" selection-end-column="83" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#4223#4224#0" expanded="true" />

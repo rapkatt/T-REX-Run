@@ -98,7 +98,7 @@ public class Dragon extends com.dino.gameObjects.GameObject {
             y-=move;
             if(y > Engine.GAME_HEIGHT-h){
                 jumpvector = 0;
-                PlayMusic("jump");
+                Sound("/home/rapkat/T-REX-Run/T-REX-Run/src/asset/audio/jump.wav");
             }
         }
 
@@ -106,23 +106,21 @@ public class Dragon extends com.dino.gameObjects.GameObject {
         checkEdges();
     }
 
-    class PlayMusic{
-        static void playMusic(String filename){
-            AudioPlayer MAP = AudioPlayer.player;
-            AudioStream MAS;
+    static void Sound(String filename){
+        AudioPlayer MAP = AudioPlayer.player;
+        AudioStream MAS;
 
-            ContinuousAudioDataStream loop = null;
-            try {
-                InputStream test = new FileInputStream(filename);
-                MAS = new AudioStream(test);
-                AudioPlayer.player.start(MAS);
+        ContinuousAudioDataStream loop = null;
+        try {
+            InputStream test = new FileInputStream(filename);
+            MAS = new AudioStream(test);
+            AudioPlayer.player.start(MAS);
 
 
-            } catch (IOException error) {
-            }
-            MAP.start(loop);
-
+        } catch (IOException error) {
+            System.out.println("error");
         }
+        MAP.start(loop);
 
     }
 
