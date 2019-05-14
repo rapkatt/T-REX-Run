@@ -23,7 +23,7 @@ import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Shape;
 
 
-public class Engine extends StackPane {
+public class  Engine extends StackPane {
     public static final int GAME_WIDTH      = 1000;
     public static final int GAME_HEIGHT     = 300;
     private static final int INITIAL_SPEED   = 300;
@@ -69,7 +69,7 @@ public class Engine extends StackPane {
 
         btnRestart = new ImageView(new Image(getClass().getResourceAsStream("/res/gameOver.png"))); //game over code
 
-        btnStart = new ImageView(new Image(getClass().getResourceAsStream("/res/restart.png"))); //start button
+        btnStart = new ImageView(new Image(getClass().getResourceAsStream("/res/start.png"))); //start button
         setAlignment(btnStart, Pos.CENTER);
         btnExit = new ImageView(new Image(getClass().getResourceAsStream("/res/cloud.png"))); // exit button
         setAlignment(btnExit, Pos.CENTER);
