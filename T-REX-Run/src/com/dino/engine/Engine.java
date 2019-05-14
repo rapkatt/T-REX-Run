@@ -79,10 +79,12 @@ public class  Engine extends StackPane {
         btnStart.setOnMouseClicked(e -> {
             start();
             btnStart.setVisible(false);
+            btnExit.setVisible(false);
         });
+
         btnExit.setOnMouseClicked(e -> {
             System.exit(0);
-            btnExit.setVisible(true);
+            btnExit.setVisible(false);
         });
 
         canvas.setOnMouseClicked((event) -> {
@@ -90,7 +92,6 @@ public class  Engine extends StackPane {
                 reinitHighScore();
                 this.init();
                 this.start();
-                //player.score();
                 btnRestart.setVisible(false);
             }
         });
@@ -108,6 +109,7 @@ public class  Engine extends StackPane {
             }
         };
     }
+
 
 
     private void reinitHighScore() {
