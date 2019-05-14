@@ -10,7 +10,7 @@ import javafx.stage.Stage;
 
 
 public class Main extends Application{
-    public static final String TITLE = "Dino Run";
+    public static final String TITLE = "T-REX RUN";
 
     public static void main(String[] args) {
         launch(args);
