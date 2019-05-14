@@ -8,6 +8,11 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.shape.Polygon;
+import sun.audio.*;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 
 import javax.sound.sampled.AudioSystem;
 import javax.sound.sampled.Clip;
@@ -93,29 +98,34 @@ public class Dragon extends com.dino.gameObjects.GameObject {
             y-=move;
             if(y > Engine.GAME_HEIGHT-h){
                 jumpvector = 0;
-                playSound("jump");
+                PlayMusic("jump");
             }
         }
 
         
         checkEdges();
     }
-    private void playSound (String sound) {
-        try {
-            Clip clip = AudioSystem.getClip();
-            clip.open(AudioSystem.getAudioInputStream(this.getClass().getResource(audioPath + sound + ".wav")));
-            clip.start();
-        } catch (LineUnavailableException e) {
-            System.out.println("Неверный путь к файлу " + sound);
-            System.exit(1);
-        } catch (UnsupportedAudioFileException e) {
-            System.out.println("Формат файла " + sound + " не поддерживается");
-            System.exit(2);
-        } catch (IOException e) {
-            System.out.println("Ошибка воспроизведения файла " + sound);
-            System.exit(3);
+
+    class PlayMusic{
+        static void playMusic(String filename){
+            AudioPlayer MAP = AudioPlayer.player;
+            AudioStream MAS;
+
+            ContinuousAudioDataStream loop = null;
+            try {
+                InputStream test = new FileInputStream(filename);
+                MAS = new AudioStream(test);
+                AudioPlayer.player.start(MAS);
+
+
+            } catch (IOException error) {
+            }
+            MAP.start(loop);
+
         }
+
     }
+
 
     private void checkEdges(){
         if(x<0)
