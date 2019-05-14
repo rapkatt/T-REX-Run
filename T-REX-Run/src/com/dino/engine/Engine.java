@@ -4,7 +4,9 @@ import com.dino.gameObjects.Dragon;
 import com.dino.gameObjects.GameObject;
 import com.dino.gameObjects.Horizon;
 
+import java.io.FileInputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -22,11 +24,9 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.StackPane;
 import javafx.scene.shape.Shape;
-
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.Clip;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.UnsupportedAudioFileException;
+import sun.audio.AudioPlayer;
+import sun.audio.AudioStream;
+import sun.audio.ContinuousAudioDataStream;
 
 
 public class  Engine extends StackPane {
@@ -214,14 +214,31 @@ public class  Engine extends StackPane {
                 Shape colisionShape = Shape.intersect(player.getPolygon(), obj.getPolygon());
                 if (colisionShape.getBoundsInLocal().getWidth() != -1) {
                     player.setState(Dragon.states.dead);
-
+                    Sound("/home/rapkat/T-REX-Run/T-REX-Run/src/asset/audio/dying.wav");
                     player.render(g);
                     stop();
                     btnRestart.setVisible(true);
                 }
             }
-//        }
     }
+    static void Sound(String filename){
+        AudioPlayer MAP = AudioPlayer.player;
+        AudioStream MAS;
+
+        ContinuousAudioDataStream loop = null;
+        try {
+            InputStream test = new FileInputStream(filename);
+            MAS = new AudioStream(test);
+            AudioPlayer.player.start(MAS);
+
+
+        } catch (IOException error) {
+            System.out.println("error");
+        }
+        MAP.start(loop);
+
+    }
+
     public void start(){
         speed = INITIAL_SPEED;
         prevTime = System.nanoTime();
