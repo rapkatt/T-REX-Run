@@ -49,7 +49,6 @@ public class Dragon extends com.dino.gameObjects.GameObject {
     int spriteIndex;
     
     double elapsedTimeRunning;
-    private static String audioPath = "";
 
 
     public Dragon(Engine engine){
@@ -88,6 +87,8 @@ public class Dragon extends com.dino.gameObjects.GameObject {
         if(engine.isKeyPressed(KeyCode.SPACE)){ //dragon jump
             if(jumpvector == 0){
                 jumpvector = 1300;
+                Sound("/home/rapkat/T-REX-Run/T-REX-Run/src/asset/audio/jump.wav");
+
             }
         }
         
@@ -98,7 +99,6 @@ public class Dragon extends com.dino.gameObjects.GameObject {
             y-=move;
             if(y > Engine.GAME_HEIGHT-h){
                 jumpvector = 0;
-                Sound("/home/rapkat/T-REX-Run/T-REX-Run/src/asset/audio/jump.wav");
             }
         }
 
@@ -139,7 +139,9 @@ public class Dragon extends com.dino.gameObjects.GameObject {
         if(elapsedTimeRunning >= 0.1){
             if(spriteIndex++ >= maps.get(currentState).length-1){
                 spriteIndex = 0;
-                score++;
+                score+=10;
+                if (score%1000==0)
+                Sound("/home/rapkat/T-REX-Run/T-REX-Run/src/asset/audio/achievement.wav");
             }
             elapsedTimeRunning = 0;
         }

@@ -160,8 +160,8 @@ public class  Engine extends StackPane {
     private void initScoreBoard() {
         if(player.getHighScore()<= 0)
             changeHighScoreVisibleState(false);
-        setMargin(currentScore,new Insets(15,45,15,15));
-        setMargin(highScore,new Insets(30,40,15,15));
+        setMargin(currentScore,new Insets(15,70,15,15));
+        setMargin(highScore,new Insets(30, 65,15,15));
         setMargin(currentCounter,new Insets(15,20,15,15));
         setMargin(highCounter,new Insets(30,20,15,15));
         setAlignment(currentScore,Pos.TOP_RIGHT);
