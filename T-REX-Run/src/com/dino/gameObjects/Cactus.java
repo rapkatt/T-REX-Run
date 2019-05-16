@@ -25,13 +25,13 @@ public class Cactus extends GameObject{
             img = new Image(getClass().getResourceAsStream("/res/obstacle-large.png"));
             w = 100;
             h = 100;
-            spriteNum = (int) (new Random().nextDouble()*3); // generate a small cactus
+            spriteNum = (int) (new Random().nextDouble()*3); // generate a large cactus
         }
         if(com.dino.gameObjects.CactusBuilder.Cactussize.SMALL.equals(size)){
             img = new Image(getClass().getResourceAsStream("/res/obstacle-small.png"));
             w = 34;
             h = 70;
-            spriteNum = (int) (new Random().nextDouble()*6); // generate a large cactus
+            spriteNum = (int) (new Random().nextDouble()*6); // generate a small cactus
         }
         y=Engine.GAME_HEIGHT-h;
     }

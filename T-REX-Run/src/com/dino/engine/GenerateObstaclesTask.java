@@ -12,10 +12,6 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.concurrent.Task;
 
-/**
- *
- * @author Dimitrije Muzur
- */
 public class GenerateObstaclesTask extends Task<ObservableList<GameObject>>{
     final Engine engine;
     private final ListProperty<GameObject> partialResult = new SimpleListProperty<>(FXCollections.observableArrayList(new ArrayList<>()));

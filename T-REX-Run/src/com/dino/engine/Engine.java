@@ -32,7 +32,7 @@ import sun.audio.ContinuousAudioDataStream;
 public class  Engine extends StackPane {
     public static final int GAME_WIDTH      = 1000;
     public static final int GAME_HEIGHT     = 300;
-    private static final int INITIAL_SPEED   = 300;
+    private static  int INITIAL_SPEED   = 300;
 
     private ListProperty<GameObject> ForegroundObjects = null;
     private ListProperty<GameObject> BackgroundObjects = null;
@@ -56,7 +56,7 @@ public class  Engine extends StackPane {
 
     private double speed;
     private double elapsedTime;
-    ;
+
 
     private long prevTime;
 
@@ -79,8 +79,8 @@ public class  Engine extends StackPane {
         setAlignment(btnStart, Pos.CENTER);
         btnExit = new ImageView(new Image(getClass().getResourceAsStream("/res/exit.png"))); // exit button
         setAlignment(btnExit, Pos.CENTER);
-
         setMargin(btnExit,new Insets(150,0,0,0));
+
         btnRestart.setVisible(false);
         btnStart.setOnMouseClicked(e -> {
             start();
@@ -103,10 +103,11 @@ public class  Engine extends StackPane {
         });
         keyPool = new HashSet<>();
 
+
         timer = new AnimationTimer() {
             @Override
             public void handle(long now) {
-                mainloop((now - prevTime) / 1000000000.0); // animation speed
+                mainloop((now - prevTime) / 1000000000.0 ); // animation speed
                 prevTime = now;
                 currentCounter.setText(String.valueOf(player.getScore()));
                 if (player.getScore() > player.getHighScore())
@@ -209,7 +210,7 @@ public class  Engine extends StackPane {
         }
 
 
-    private void collisionDetection() { // dont know
+    private void collisionDetection() {
             for (GameObject obj : ForegroundObjects) {
                 Shape colisionShape = Shape.intersect(player.getPolygon(), obj.getPolygon());
                 if (colisionShape.getBoundsInLocal().getWidth() != -1) {
@@ -243,6 +244,7 @@ public class  Engine extends StackPane {
         speed = INITIAL_SPEED;
         prevTime = System.nanoTime();
         initScoreBoard();
+
 
         BackgroundObjects.add(new Horizon(this));
         Thread backgroundGenCloudsTread = new Thread(generateClouds); //start to generate clouds

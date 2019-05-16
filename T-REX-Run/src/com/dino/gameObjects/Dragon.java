@@ -71,11 +71,10 @@ public class Dragon extends com.dino.gameObjects.GameObject {
     }
 
 
-
     @Override
     public void update(double delta) {
         elapsedTimeRunning+=delta;
-        
+
         if(engine.isKeyPressed(KeyCode.LEFT)){ //dragon move to left
             x -= SPEED *delta;
             currentState = states.running;
@@ -135,7 +134,7 @@ public class Dragon extends com.dino.gameObjects.GameObject {
     }
 
 //    @Override
-    public void render(GraphicsContext g) { //i dont know
+    public void render(GraphicsContext g) { //score, sound for 1000
         if(elapsedTimeRunning >= 0.1){
             if(spriteIndex++ >= maps.get(currentState).length-1){
                 spriteIndex = 0;
